@@ -5,7 +5,7 @@
   --black: #1c2b2d;
   --blue: #31326f;
   --light-blue: #005490;
-  --light-blue-border: #68daf9;
+  --light-blue-border: #68d2f9;
   --color-primary: #9d0191;
   --color-sec: #db6400;
   --grey: #eee;
@@ -63,7 +63,7 @@ img {
   margin-bottom: 2rem;
 }
 
-.count {
+.number {
   font-size: 4rem;
 }
 
@@ -79,7 +79,10 @@ img {
   cursor: pointer;
 }
 
+button.generate {
+  background-color: var(--color-primary);
+}
+
 button.reset {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--color-sec);
 }
