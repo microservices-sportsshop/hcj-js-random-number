@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const btn = document.querySelector(".generate");
 
     const generateNumber = () => {
-        const randomNumber = Math.floor(Math.random() * 1001 ); // Generate number btn 1 and 10
-        number.innerHTML = randomNumber;
+        const randomNumber = Math.floor(Math.random() * 1001); // Generate number between 0 and 1000
+        number.textContent = randomNumber;
     };
 
     btn.addEventListener("click", generateNumber);
 
-    generateNumber();
+    generateNumber(); // Initial call to set the number on load
 });
