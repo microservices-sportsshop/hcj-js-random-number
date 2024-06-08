@@ -1,31 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const count = document.querySelector(".count");
-    const buttons = document.querySelector(".buttons");
+    const number = document.querySelector(".number");
+    const btn = document.querySelector(".generate");
 
-    buttons.addEventListener("click", (e) => {
-        if (e.target.closest("button")) {
-            const button = e.target.closest("button");
+    const generateNumber = () => {
+        const randomNumber = Math.floor(Math.random() * 1001 ); // Generate number btn 1 and 10
+        number.innerHTML = randomNumber;
+    };
 
-            if (button.classList.contains("add")) {
-                count.textContent = parseInt(count.textContent) + 1;
-            } else if (button.classList.contains("subtract")) {
-                count.textContent = parseInt(count.textContent) - 1;
-            } else if (button.classList.contains("reset")) {
-                count.textContent = 0;
-            }
+    btn.addEventListener("click", generateNumber);
 
-            setColor();
-        }
-    });
-
-    function setColor() {
-        const currentCount = parseInt(count.textContent);
-        if (currentCount > 0) {
-            count.style.color = "yellow";
-        } else if (currentCount < 0) {
-            count.style.color = "orangered";
-        } else {
-            count.style.color = "#fff";
-        }
-    }
+    generateNumber();
 });
