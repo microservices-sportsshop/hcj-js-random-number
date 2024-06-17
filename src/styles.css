@@ -48,7 +48,7 @@ img {
   height: 100vh;
 }
 
-.counter-div {
+.randomnumber-div {
   width: 42rem;
   border: 1px solid var(--light-blue-border);
   padding: 1rem;
@@ -59,7 +59,7 @@ img {
   box-shadow: 0 0 5px rgba(1, 54, 95, 0.9);
 }
 
-.counter-div>* {
+.randomnumber-div>* {
   margin-bottom: 2rem;
 }
 
