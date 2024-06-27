@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resetBtn = document.querySelector(".reset");
 
     const generateNumber = () => {
-        const randomNumber = Math.floor(Math.random() * 1001); // Generate number between 0 and 1000
+        const randomNumber = Math.floor(Math.random() * 1001);
         number.textContent = randomNumber;
     };
 
